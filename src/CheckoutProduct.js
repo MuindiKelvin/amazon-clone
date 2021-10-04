@@ -13,7 +13,7 @@ function CheckoutProduct({id, image, title, price, rating }) {
     })
   }
   return (
-    <div className="checkoutproduct">
+    <div className="checkoutProduct">
       <img className="checkoutProduct__image" src={image} alt=""/>
 
     <div className="checkoutProduct__info"> 
@@ -31,6 +31,7 @@ function CheckoutProduct({id, image, title, price, rating }) {
     <button onClick={ removeFromBasket }>Remove from Basket </button>
     </div>
     </div>
+    
   );
 }
 

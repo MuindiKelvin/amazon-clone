@@ -1,4 +1,4 @@
-import React, { useState, useEffect }from 'react';
+import React, { useState, useEffect } from 'react';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css';
 import { useStateValue } from "./StateProvider";
@@ -27,7 +27,7 @@ function Payment() {
        const reponse = await axios ({ //axios is kinda a request
        method: 'post',  
        //Stripe expects the total in a currencies subunits 
-      url: '/payments/create?total=${getBasketTotal(basket) * 100}' 
+      url: `/payments/create?total=${getBasketTotal(basket) * 100 }` 
 
        });
        setClientSecret(response.data.clientSecret)

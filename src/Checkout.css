@@ -3,6 +3,7 @@
     padding: 20px;
     background-color: white;
     height: max-content;
+    cursor: pointer;
 }
 
 .checkout__ad {

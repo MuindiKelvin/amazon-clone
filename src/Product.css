@@ -10,6 +10,10 @@
     min-width: 100px ;
     background-color: white;
     z-index: 1;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .product >img {
@@ -17,6 +21,7 @@
     width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
+    transition: transform 100ms ease-in;
 }
 
 .product >button {
@@ -25,6 +30,8 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    cursor: pointer;
+    border-radius: 50px;
 }
 .product__rating {
     display: flex;
@@ -37,4 +44,8 @@
 .product__info {
     height: 100px;
     margin-bottom: 15px;
+}
+
+.product:hover {
+    transform: scale(1.07);
 }

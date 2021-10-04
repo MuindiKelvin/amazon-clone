@@ -2,6 +2,11 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
 }
 
 .checkoutProduct__info {
@@ -16,6 +21,8 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
     background-color: none;
+    cursor: pointer;
+    border-radius: 50px;
 }
 
 .checkoutProduct__image {
@@ -31,4 +38,8 @@
 .checkoutProduct__title {
     font-size: 17px;
     font-weight: 800;
+}
+
+.checkoutProduct:hover {
+    transform: scale(1.07);
 }

@@ -1,0 +1,38 @@
+[debug] [2021-10-22T23:48:19.772Z] ----------------------------------------------------------------------
+[debug] [2021-10-22T23:48:19.784Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kevin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-22T23:48:19.786Z] CLI Version:   9.20.0
+[debug] [2021-10-22T23:48:19.787Z] Platform:      win32
+[debug] [2021-10-22T23:48:19.787Z] Node Version:  v14.15.4
+[debug] [2021-10-22T23:48:19.791Z] Time:          Sat Oct 23 2021 02:48:19 GMT+0300 (East Africa Time)
+[debug] [2021-10-22T23:48:19.792Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-22T23:48:20.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-22T23:48:20.096Z] > authorizing via signed-in user (kevinmuindi10@gmail.com)
+[debug] [2021-10-22T23:48:20.097Z] [iam] checking project challenge-1dcd6 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-10-22T23:48:20.108Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-22T23:48:20.109Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-22T23:48:20.651Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 22 Oct 2021 23:48:21 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-22T23:48:20.781Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-1dcd6:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-10-22T23:48:22.528Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 22 Oct 2021 23:48:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1274","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-22T23:48:22.540Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/challenge-1dcd6/serviceAccounts/challenge-1dcd6@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-10-22T23:48:24.193Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 22 Oct 2021 23:48:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-22T23:48:24.213Z] > refreshing access token with scopes: []
+[debug] [2021-10-22T23:48:24.216Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-22T23:48:24.629Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 22 Oct 2021 23:48:25 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-22T23:48:24.787Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dcd6 [none]
+[debug] [2021-10-22T23:48:25.621Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dcd6 200
+[debug] [2021-10-22T23:48:25.622Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dcd6 {"projectId":"challenge-1dcd6","projectNumber":"724237870853","displayName":"amazon-challenge","name":"projects/challenge-1dcd6","resources":{"hostingSite":"challenge-1dcd6","realtimeDatabaseInstance":"challenge-1dcd6-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-10-22T23:48:25.624Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dcd6 [none]
+[debug] [2021-10-22T23:48:26.169Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dcd6 200
+[debug] [2021-10-22T23:48:26.171Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dcd6 {"projectId":"challenge-1dcd6","projectNumber":"724237870853","displayName":"amazon-challenge","name":"projects/challenge-1dcd6","resources":{"hostingSite":"challenge-1dcd6","realtimeDatabaseInstance":"challenge-1dcd6-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'challenge-1dcd6'...
+[info] 
+[info] i  deploying database, functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code1

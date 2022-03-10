@@ -24,10 +24,10 @@ function Payment() {
    //generate the special stripe secret which allows us to charge a customer
    
    const getClientSecret = async () => {
-       const reponse = await axios ({ //axios is kinda a request
+       const response = await axios ({ //axios is kinda a request
        method: 'post',  
        //Stripe expects the total in a currencies subunits 
-      url: `/payments/create?total=${getBasketTotal(basket) * 100 }` 
+       url: `/payments/create?total=${getBasketTotal(basket) * 100}` 
 
        });
        setClientSecret(response.data.clientSecret)
@@ -38,6 +38,7 @@ function Payment() {
     }, [basket])
 
     console.log('THE SECRET IS >>>', clientSecret)
+    console.log('👱', user)
 
  const handleSubmit = async (event) => {
      //do all the fancy stripe stuff...
@@ -55,7 +56,7 @@ function Payment() {
        setError(null)
        setProcessing(false)
 
-       history.replace('/orders')
+       history.replace("/orders")
      
      })
 

@@ -11,14 +11,17 @@ import axios from './axios';
 function Payment() {
  const [{basket, user}, dispatch] = useStateValue();
  const history = useHistory();
- const stripe = useStripe();
+ const stripe = useStripe('sk_test_51IINF0LCegZ3sUt0yEer6w40YXg4K0pmG05fCGIcapb2dyurpNAr3NCwL22H9c5bkIxMndX868GgRuVApTN5ecXM00DlIcqI8F');
  const elements =useElements();
+ 
 
  const [succeeded, setSucceeded] = useState(false);
  const [processing, setProcessing] = useState("");
  const [error, setError] = useState(null);
  const [disabled, setDisabled] = useState(true);
- const [clientSecret, setClientSecret] = useState(true);
+ const [clientSecret, setClientSecret] = useState();
+
+
 
  useEffect(() => {
    //generate the special stripe secret which allows us to charge a customer
@@ -67,6 +70,9 @@ function Payment() {
       setDisabled(event.empty);
       setError(event.error ? event.error.message : "");
  }
+
+
+
  
  return (
     <div className="payment">
@@ -85,8 +91,8 @@ function Payment() {
           </div>
           <div className='payment__address'>
              <p>{user?.email}</p>
-             <p>30017, EMBAKASI LANE </p>
-             <p>Nairobi, Kenya</p>
+             {/*<p>30017, EMBAKASI LANE </p> */}
+             <p>Kenya</p>
           </div>
          </div>
        {/*Payment section -Review items */}
@@ -124,7 +130,7 @@ function Payment() {
                             value={getBasketTotal(basket)}
                             displayType={"text"}
                             thousandSeparator={true}
-                            prefix={"$"}
+                            prefix={"Ksh"}
                             />
                         <button disabled={processing || disabled || succeeded}>
                             <span> {processing ? <p>Processing </p> : "Buy Now"}</span>

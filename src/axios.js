@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-         baseURL: 'http://localhost:5001/challenge-1dcd6/us-central1/api', // THE API (cloud function) URL
+         baseURL: 'https://challenge-1dcd6-default-rtdb.europe-west1.firebasedatabase.app', // THE API (cloud function) URL
         withCredentials: false,
             headers: {
               'Access-Control-Allow-Origin' : '*',
@@ -9,3 +9,8 @@ const instance = axios.create({
           } 
       })
 export default instance;
+
+
+// 
+
+// http://localhost:5001/challenge-1dcd6/us-central1/api

@@ -1,5 +1,5 @@
 .header {
-   height: 60px;
+   height: 100px;
    display: flex;
    align-items: center;
    background-color: black; 
@@ -17,20 +17,24 @@
 
 .header__search {
     display: flex;
-    flex: 1;
+    flex: 0.95;
     align-items: center;
     border-radius: 24px;
+    border: none;
+    
 }
 .header__searchInput {
     height: 12px;
     padding: 10px;
     border: none;
     width: 100%;
+    outline: none;
+    border-radius: 999px;
 }
 
 .header__searchIcon {
     padding: 5px;
-    height: 22px !important;
+    height: 24px !important;
     background-color: #cd9042;
 }
 
